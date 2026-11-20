@@ -1,0 +1,125 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>A Little Birthday Dream ♡</title>
+
+  <style>
+
+    * { box-sizing: border-box; }
+
+    body {
+
+      margin: 0;
+
+      min-height: 100vh;
+
+      display: grid;
+
+      place-items: center;
+
+      background: linear-gradient(135deg, #fff0f5, #fce1ed, #f9eafa);
+
+      font-family: Georgia, serif;
+
+      color: #80536c;
+
+      text-align: center;
+
+      padding: 24px;
+
+    }
+
+    .card {
+
+      background: rgba(255,255,255,.8);
+
+      padding: 38px 24px;
+
+      border-radius: 25px;
+
+      max-width: 420px;
+
+      width: 100%;
+
+      box-shadow: 0 10px 35px #dca9c455;
+
+    }
+
+    .flower { font-size: 48px; }
+
+    h1 { font-size: 32px; line-height: 1.4; }
+
+    p { line-height: 1.8; }
+
+    button {
+
+      background: #d98bad;
+
+      color: white;
+
+      border: 0;
+
+      border-radius: 25px;
+
+      padding: 14px 25px;
+
+      font-size: 16px;
+
+      margin-top: 15px;
+
+    }
+
+    #surprise { display: none; }
+
+  </style>
+
+</head>
+
+<body>
+
+  <main class="card">
+
+    <div class="flower">🌷</div>
+
+    <p> A little birthday surprise for the most precious person in my world.</p>
+
+    <h1>Happy Birthday! ♡</h1>
+
+    <p>may your day be as beautiful as you are.♡</p>
+
+    <button onclick="openSurprise()">Open Your Surprise 💌</button>
+
+    <div id="surprise">
+
+      <h2>You're Special! ✨</h2>
+
+      <p>তোমার প্রতিটি দিন ভরে উঠুক আনন্দ, ভালোবাসা আর সুন্দর স্মৃতিতে।</p>
+
+      <p>Stay happy, always. ♡</p>
+
+    </div>
+
+  </main>
+
+  <script>
+
+    function openSurprise() {
+
+      document.getElementById("surprise").style.display = "block";
+
+    }
+
+  </script>
+
+</body>
+
+</html>
