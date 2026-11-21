@@ -142,6 +142,39 @@ body::after {
   pointer-events: none;
 }
 
+
+.white-bow {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  width: 38px;
+  height: 25px;
+  z-index: 2;
+  background: radial-gradient(circle at center, white 0 3px, transparent 3.5px);
+}
+
+.white-bow::before,
+.white-bow::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  width: 15px;
+  height: 17px;
+  border: 2px solid #fff;
+  border-radius: 70% 30% 70% 30%;
+  filter: drop-shadow(0 1px 3px #dca9c4);
+}
+
+.white-bow::before {
+  left: 1px;
+  transform: rotate(25deg);
+}
+
+.white-bow::after {
+  right: 1px;
+  transform: rotate(65deg);
+}
+
         </style>
 
 </head>
