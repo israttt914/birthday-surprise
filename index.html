@@ -57,7 +57,16 @@ box-shadow: 0 10px 35px rgba(180, 100, 130, 0.2),
 
     }
 
-    .flower { font-size: 48px; }
+    .flower {
+  font-size: 55px;
+  filter: drop-shadow(0 4px 8px #d98bad88);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
 
     h1 { font-size: 32px; line-height: 1.4; }
 
