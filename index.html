@@ -175,7 +175,21 @@ body::after {
   transform: rotate(65deg);
 }
 
-        </style>
+.card::before {
+  content: "✧  ˚  ✦  ˚  ✧";
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 10px;
+  opacity: 0.7;
+  pointer-events: none;
+  animation: sparkle 2s ease-in-out infinite alternate;
+}
+
+     </style>
 
 </head>
 
