@@ -90,7 +90,12 @@ box-shadow: 0 10px 35px rgba(180, 100, 130, 0.2),
 
     }
 
-    #surprise { display: none; }
+    #surprise {
+  display: none;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
 
 body::before {
   content: "✧ ˚｡⋆ ✨ ⋆｡˚ ✧";
@@ -235,12 +240,18 @@ body::after {
   </main>
 
   <script>
+  
+  function openSurprise() {
 
-    function openSurprise() {
+  const surprise = document.getElementById("surprise");
+  surprise.style.display = "block";
 
-      document.getElementById("surprise").style.display = "block";
+  setTimeout(() => {
+    surprise.style.opacity = "1";
+    surprise.style.transform = "translateY(0)";
+  }, 10);
 
-    }
+}
 
   </script>
 
