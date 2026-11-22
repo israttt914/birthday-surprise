@@ -38,24 +38,19 @@ background: linear-gradient(135deg, #e9b9c5, #f8cbd0, #f4b9c3, #eac0d0);
 
     }
 
-    .card {
-
-      background: rgba(255, 245, 248, 0.82);
-backdrop-filter: blur(8px);
-
-      padding: 38px 24px;
-
-      border-radius: 25px;
-
-      max-width: 420px;
-
-      width: 100%;
-
-      border: 1px solid rgba(255, 255, 255, 0.7);
-box-shadow: 0 10px 35px rgba(180, 100, 130, 0.2),
-            0 0 25px rgba(255, 220, 230, 0.6);
-
-    }
+  .card {
+  background: rgba(255, 245, 248, 0.82);
+  backdrop-filter: blur(8px);
+  padding: 38px 24px;
+  border-radius: 25px;
+  max-width: 420px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 10px 35px rgba(180, 100, 130, 0.2),
+              0 0 25px rgba(255, 220, 230, 0.6);
+  position: relative;
+  overflow: hidden;
+}
 
     .flower {
   font-size: 55px;
@@ -126,11 +121,6 @@ body::after {
   opacity: 0.85;
   pointer-events: none;
   animation: float 3s ease-in-out infinite;
-}
-
-.card {
-  position: relative;
-  overflow: hidden;
 }
 
 .card::after {
